@@ -1,0 +1,19 @@
+{
+  "name": "practical-challenge-farmatodo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Prueba técnica QA Automation — integración PokéAPI + E2E Saucedemo (Playwright + TypeScript)",
+  "scripts": {
+    "test": "PLAYWRIGHT_FORCE_TTY=200 playwright test",
+    "test:integration": "PLAYWRIGHT_FORCE_TTY=200 playwright test --project=api",
+    "test:e2e": "PLAYWRIGHT_FORCE_TTY=200 playwright test --project=e2e",
+    "test:all": "PLAYWRIGHT_FORCE_TTY=200 playwright test",
+    "test:ui": "playwright test --ui",
+    "test:e2e:slow": "SLOW_MO=1000 PLAYWRIGHT_FORCE_TTY=200 playwright test --project=e2e --headed",
+    "test:ui:slow": "SLOW_MO=1000 playwright test --project=e2e --ui"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.0",
+    "typescript": "^5.7.0"
+  }
+}
